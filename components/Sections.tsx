@@ -657,7 +657,12 @@ const socials = [
   },
   {
     name: "WhatsApp",
-    href: "#", // TODO: https://wa.me/92XXXXXXXXXX
+    href: "https://wa.me/923094126964", // TODO: https://wa.me/92XXXXXXXXXX
+    icon: <svg viewBox="0 0 24 24" className="h-[18px] w-[18px]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3z" /><path d="M9 8.8c.3 2.6 2.6 4.9 5.2 5.2l1.2-1.2-2-1-.8.7a4 4 0 0 1-1.9-1.9l.7-.8-1-2z" fill="currentColor" stroke="none" /></svg>,
+  },
+  {
+    name: "WhatsApp",
+    href: "https://wa.me/971595609493", // TODO: https://wa.me/92XXXXXXXXXX
     icon: <svg viewBox="0 0 24 24" className="h-[18px] w-[18px]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3z" /><path d="M9 8.8c.3 2.6 2.6 4.9 5.2 5.2l1.2-1.2-2-1-.8.7a4 4 0 0 1-1.9-1.9l.7-.8-1-2z" fill="currentColor" stroke="none" /></svg>,
   },
 ];
@@ -765,16 +770,24 @@ export function Footer() {
                 <span className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white/10 text-emerald-300">
                   <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="5" width="18" height="14" rx="3" /><path d="m4 7 8 6 8-6" /></svg>
                 </span>
-                <a href="mailto:info@yourdomain.com" className="break-all transition-colors hover:text-white">
-                  info@yourdomain.com
+                <a href="mailto:admin@techtwistglobal.com" className="break-all transition-colors hover:text-white">
+                  admin@techtwistglobal.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white/10 text-emerald-300">
                   <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" /></svg>
                 </span>
-                <a href="tel:+000000000000" className="transition-colors hover:text-white">
-                  +00 000 0000000
+                <a href="tel:+923094126964" className="transition-colors hover:text-white">
+                  +92 309 412 6964
+                </a>
+              </li>
+               <li className="flex items-start gap-3">
+                <span className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white/10 text-emerald-300">
+                  <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" /></svg>
+                </span>
+                <a href="tel:+971595609493" className="transition-colors hover:text-white">
+                  +971 59 560 9493
                 </a>
               </li>
               <li className="flex items-start gap-3">
