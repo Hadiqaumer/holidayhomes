@@ -704,13 +704,8 @@ export function Footer() {
           {/* brand */}
           <div>
             <a href="#" className="inline-flex items-center gap-3">
-              <span className="grid h-11 w-11 place-items-center rounded-2xl bg-gradient-to-br from-[#35c9d6] to-[#0e9aa7] font-head text-[15px] font-extrabold shadow-[inset_0_1.5px_0_rgba(255,255,255,.45)]">
-                TT
-              </span>
-              <span className="font-head text-[18px] font-extrabold leading-tight">
-                TechTwist Global
-                <span className="block text-[11px] font-semibold tracking-[2px] text-white/50">HOSPITALITY BPO</span>
-              </span>
+              <img src="/images/Tech1.webp" alt="TechTwist" width={300} height={215} fetchPriority="high" className="block h-[40px] w-auto sm:h-[45px]" />
+            <span className="leading-tight text-white">TechTwist <span className="block text-[10px] font-semibold text-white sm:text-xs">Innovate · Connect · Grow</span></span>
             </a>
             <p className="mt-5 max-w-[320px] text-[14.5px] leading-7 text-white/65">
               Guest management and hospitality support for hotels, resorts, vacation rentals and
