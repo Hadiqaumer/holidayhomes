@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; scroll-padding-top: 76px; -webkit-text-size-adjust: 100%; }
+body { @apply font-body text-ink; background: linear-gradient(180deg,#f8fdfc,#eaf9f6 50%,#f1fbf5); overflow-x: hidden; }
+h1, h2, h3 { @apply font-head; line-height: 1.1; }
+img { max-width: 100%; }
+
+@layer components {
+  .wrap { @apply mx-auto max-w-[1360px] px-[5vw]; }
+  /* compact vertical rhythm: 48px phone, 64px tablet/desktop */
+  .sec { @apply py-12 md:py-16; }
+  .alt { background: linear-gradient(135deg,#e1f7f3,#effcf8 50%,#e0f8ea); }
+  .ey { @apply text-xs font-bold uppercase tracking-[3px] text-em; }
+  .h2 { @apply mb-3 mt-2 text-[clamp(26px,4vw,42px)] font-extrabold; background: linear-gradient(90deg,#06323a,#0b6b73 60%,#10b981); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .lead { @apply max-w-[640px] text-mut; }
+  .btn { @apply inline-block cursor-pointer rounded-full bg-grad px-7 py-3.5 text-[15px] font-semibold text-white shadow-[0_14px_34px_-12px_#0e9aa7] transition-transform hover:-translate-y-0.5; }
+  .btn-o { @apply bg-white text-deep ring-1 ring-teal shadow-none; background-image: none; }
+  .card { @apply rounded-3xl border border-teal/20 bg-soft p-6 shadow-[0_26px_50px_-32px_rgba(11,79,92,.55)] sm:p-7; transform-style: preserve-3d; transition: transform .15s; }
+  .ic { @apply mb-4 grid h-[54px] w-[54px] place-items-center rounded-2xl bg-grad text-2xl shadow-[0_14px_28px_-10px_#0e9aa7]; transform: translateZ(40px); }
+  /* floating glass cards (no backdrop-filter: it is very slow when animated) */
+  .fc { @apply absolute z-[2] animate-float rounded-2xl border border-teal/20 bg-white/90 px-[18px] py-3.5 text-[13px] shadow-[0_24px_44px_-22px_rgba(11,79,92,.55)]; }
+  .fc b { @apply block font-head text-sm; }
+  .fc span { @apply text-xs text-mut; }
+  .inp { @apply rounded-xl border border-teal/20 bg-mist px-4 py-3 text-sm text-ink outline-none focus:ring-2 focus:ring-teal; }
+}
+
+/* scroll reveal: plain CSS, switched on by one shared IntersectionObserver */
+.rv { opacity: 0; transform: translateY(22px); transition: opacity .6s ease, transform .6s ease; }
+.rv.in { opacity: 1; transform: none; }
+.grow { transform: scaleX(0); transform-origin: left; transition: transform 1.4s ease .25s; }
+.rv.in .grow { transform: none; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+@keyframes slideX { from { transform: translateX(-100%); } to { transform: translateX(200%); } }
+@keyframes slideY { from { transform: translateY(-100%); } to { transform: translateY(200%); } }
+.fade-in { animation: fadeIn .4s ease both; }
+.sway { transform-origin: top center; animation: sway 5s ease-in-out infinite; }
+@keyframes sway { 0%, 100% { transform: rotate(-1.8deg); } 50% { transform: rotate(1.8deg); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  .rv { opacity: 1; transform: none; }
+  .grow { transform: none; }
+}
