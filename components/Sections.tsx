@@ -486,7 +486,7 @@ export function How() {
           </div>
           <a
             href="#contact"
-            className="group inline-flex shrink-0 items-center gap-3 rounded-full bg-white px-6 py-3 font-head text-sm font-bold text-deepg transition hover:-translate-y-0.5 hover:bg-teal hover:text-white"
+            className="group inline-flex shrink-0 items-center gap-3 rounded-full bg-teal px-6 py-3 font-head text-sm font-bold text-deepg transition hover:-translate-y-0.5 hover:bg-teal hover:text-white"
           >
             Get a Quote
             <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -691,7 +691,7 @@ export function Footer() {
             </div>
             <a
               href="#contact"
-              className="group inline-flex shrink-0 items-center gap-3 rounded-full bg-white px-8 py-4 font-head text-sm font-bold text-deepg transition duration-300 hover:-translate-y-1 hover:bg-teal hover:text-white"
+              className="group inline-flex shrink-0 items-center gap-3 rounded-full bg-teal px-8 py-4 font-head text-sm font-bold text-deepg transition duration-300 hover:-translate-y-1 hover:bg-teal hover:text-white"
             >
               Get a Quote
               <span className="transition-transform group-hover:translate-x-1">→</span>
