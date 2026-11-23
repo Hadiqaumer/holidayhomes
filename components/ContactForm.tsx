@@ -3,7 +3,7 @@ import { useRef, useState, type FormEvent } from "react";
 import Reveal from "./Reveal";
 
 const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbxXlSMr_WlvBLyAcf_LSr2fDoMYq0kO9txAEdSAUskBqmGkh4eX0hwRx0JToBB2K2-n/exec";
+  "https://script.google.com/macros/s/AKfycbwS3bRWOMR7hojkb6xYLdw5NL6Gcehzdvb0ywcwiCh_BHKb246I5ACn6H5gUrGJdGos/exec";
 const WHATSAPP_NUMBER = "923094126964";
 
 const SERVICES = [
