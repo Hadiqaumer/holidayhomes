@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import "./globals.css";
-
+import WhatsAppFloat from "../components/WhatsAppFloat";
 const head = Plus_Jakarta_Sans({ subsets: ["latin"], weight: ["500", "700", "800"], variable: "--font-head", display: "swap" });
 const body = Inter({ subsets: ["latin"], variable: "--font-body", display: "swap" });
 
@@ -16,6 +16,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${head.variable} ${body.variable}`}>
       <body>
+        {children}
+<WhatsAppFloat />
         {children}
         {/* if JavaScript is off, show content instead of leaving it hidden for the scroll animation */}
         <noscript><style>{`.rv{opacity:1!important;transform:none!important}.grow{transform:none!important}`}</style></noscript>
